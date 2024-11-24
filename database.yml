@@ -8,13 +8,13 @@ default: &default
 
 development:
  <<: *default
- database: wonderful_pots_app_development
+ database: wonderful_pots_app2_development
 
 test:
  <<: *default
- database: wonderful_pots_app_test
+ database: wonderful_pots_app2_test
 
 production:
  <<: *default
- database: wonderful_pots_app_production
- password: <%= ENV['WONDERFUL_POST_APP_DATABASE_PASSWORD'] %>
+ database: wonderful_pots_app2_production
+ password: <%= ENV['WONDERFUL_POST_APP2_DATABASE_PASSWORD'] %>
